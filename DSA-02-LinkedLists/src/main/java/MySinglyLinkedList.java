@@ -120,4 +120,18 @@ public class MySinglyLinkedList {
         }
     }
 
+    // Assignment 3 Remove Duplicated values from SLL
+    // O(n) time | O(1) space - where n is the number of nodes in the Linked List
+    void removeDuplicatesFromLinkedList() {
+        Node current = head;
+        while (current != null) {
+            Node nextDistinctNode = current.next;
+            while (nextDistinctNode != null && nextDistinctNode.value == current.value){
+                nextDistinctNode = nextDistinctNode.next;
+            }
+            current.next = nextDistinctNode;
+            current = nextDistinctNode;
+        }
+    }
+
 }
