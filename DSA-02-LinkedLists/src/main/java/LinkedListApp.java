@@ -8,6 +8,9 @@ public class LinkedListApp {
 //        System.out.println("Without duplicates");
 //        list1.removeDuplicatesFromLinkedList();
         list1.printNodes();
+        System.out.println("After reverse in one pass");
+        list1.reverse();
+        list1.printNodes();
 
     }
 }

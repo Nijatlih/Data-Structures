@@ -134,4 +134,20 @@ public class MySinglyLinkedList {
         }
     }
 
+    // Assignment 4 Reverse the Nodes of Singly Linked List in one pass
+    public void reverse() {
+        if (isEmpty()) return;
+        Node previous = head;
+        Node current = head.next;
+        while (current != null) {
+            Node nextNode = current.next;
+            current.next = previous;
+            previous = current;
+            current = nextNode;
+        }
+        tail = head;
+        tail.next = null;
+        head = previous;
+    }
+
 }
