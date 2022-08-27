@@ -3,7 +3,7 @@ public class FactorialIterative {
     public static void main(String[] args) {
         int num=6;
         //System.out.println("Iterative - " + num+"!= " + factorial(num));
-        System.out.println("Recursive - " + num+"!= " + factorialR(num));
+        System.out.println("Recursive --> " + num+"!= " + factorialR(num));
     }
     public static long factorial(long num){
         if (num==0) return 1;
